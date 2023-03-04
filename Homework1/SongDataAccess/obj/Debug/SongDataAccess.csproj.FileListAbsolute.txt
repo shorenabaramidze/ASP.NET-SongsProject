@@ -1,0 +1,12 @@
+C:\Users\Administrator\source\repos\Homework1\SongDataAccess\bin\Debug\SongDataAccess.dll.config
+C:\Users\Administrator\source\repos\Homework1\SongDataAccess\bin\Debug\SongDataAccess.dll
+C:\Users\Administrator\source\repos\Homework1\SongDataAccess\bin\Debug\SongDataAccess.pdb
+C:\Users\Administrator\source\repos\Homework1\SongDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\source\repos\Homework1\SongDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\source\repos\Homework1\SongDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\source\repos\Homework1\SongDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\source\repos\Homework1\SongDataAccess\obj\Debug\SongDataAccess.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\Homework1\SongDataAccess\obj\Debug\SongDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\Homework1\SongDataAccess\obj\Debug\SongDataAccess.csproj.CopyComplete
+C:\Users\Administrator\source\repos\Homework1\SongDataAccess\obj\Debug\SongDataAccess.dll
+C:\Users\Administrator\source\repos\Homework1\SongDataAccess\obj\Debug\SongDataAccess.pdb

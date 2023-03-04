@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="singersModelStoreContainer" CdmEntityContainer="singersEntities">
+    <EntitySetMapping Name="Songs">
+      <EntityTypeMapping TypeName="singersModel.Song">
+        <MappingFragment StoreEntitySet="Songs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SongName" ColumnName="SongName" />
+          <ScalarProperty Name="Released" ColumnName="Released" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="singerdatas">
+      <EntityTypeMapping TypeName="singersModel.singerdata">
+        <MappingFragment StoreEntitySet="singerdata">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="country" ColumnName="country" />
+          <ScalarProperty Name="genre" ColumnName="genre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

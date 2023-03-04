@@ -1,0 +1,78 @@
+﻿@model IEnumerable<WebAppMVC.Models.Song>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>your playlist</h2>
+
+@*razor syntax 1*@
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div>
+        @{
+            var message = "";
+            var weekday = DateTime.Now.DayOfWeek;
+            var day = weekday.ToString();
+        }
+
+        @switch (day)
+        {
+            case "Monday":
+                message = "This is the first weekday.";
+                break;
+            case "Thursday":
+                message = "Only one day before weekend.";
+                break;
+            case "Friday":
+                message = "Tomorrow is weekend!";
+                break;
+            default:
+                message = "Today is " + day;
+                break;
+        }
+        <p>@message</p>
+    </div>
+
+}
+
+<form method="post" id="AddSongForm">
+    @*<input type="text" id="ID" style="display:none;" />*@
+    <input type="text" id="ID" Name="ID" placeholder="პირ.ნომერი" required />
+    <input type="text" id="SongName" Name="SongName" placeholder="სიმღერის სახელი" required />
+    <input type="text" id="Released" Name="Released" placeholder="გამოშვების წელი" required />
+    <input type="text" id="FirstName" Name="FirstName" placeholder="მომღერლის სახელი" required />
+    <input type="text" id="LastName" Name="LastName" placeholder="მომღერლის გვარი" required />
+    <button type="button" id="btnAdd" onclick="AddSong()">დამატება</button>
+
+</form>
+
+
+<table>
+    <tbody class="mytbody"></tbody>
+</table>
+
+
+
+<div>
+    @Html.ActionLink("Edit Song", "Edit/2")
+</div>
+
+
+@*razor syntax2*@
+<div>
+    @if (DateTime.IsLeapYear(DateTime.Now.Year))
+    {
+        @DateTime.Now.Year @:is a leap year.
+    }
+    else
+    {
+        @DateTime.Now.Year @:is not a leap year.
+    }
+</div>
+
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/Songs/GetSongs.js"></script>
